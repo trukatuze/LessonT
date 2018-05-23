@@ -1,0 +1,40 @@
+*{
+  box-sizing: border-box;
+}
+@mixin title($size){
+  font-family:$font-open-sans-bold;
+  font-size: $size;
+  color: $color-blue;
+  display: inline-block;
+  text-transform: uppercase;
+  span{
+    color: $color-red;
+  }
+}
+@mixin text($size,$line-height,$color){
+  font-family: $font-open-sans-regular;
+  font-size: $size;
+  color: $color;
+  line-height: $line-height;
+  font-weight: 400;
+}
+.more{
+  font-size: .875em;
+  text-transform: uppercase;
+  color: $color-red;
+  font-family: $font-open-sans-bold;
+  position: relative;
+&:after{
+  content: "→";
+  font-size: 2em;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-70%);
+  }
+}
+a:focus{
+  text-decoration: none;
+}
+.top-indentation{
+  margin: 80px 0 10px 0;
+}

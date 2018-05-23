@@ -1,0 +1,34 @@
+#portfolio {
+  .container {
+    .row {
+      .macbook {
+        background: url("../../img/MacBook.png") no-repeat;
+        background-size: cover;
+        height: 434px;
+      }
+      .macbook-item{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        margin: 66px 0 0 0;
+        .macp{
+          font-family: ﻿OpenSans-Regular;
+          font-size: 16pt;
+          color: rgba(49, 74, 91, 255);
+          text-align: left;
+        }
+        .title{
+          @include title(2rem);
+          margin-bottom: 22px;
+        }
+        .text{
+          @include text(0.9375rem,22px,$color-grey)
+          margin-bottom: 30px;
+        }
+        .more{
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

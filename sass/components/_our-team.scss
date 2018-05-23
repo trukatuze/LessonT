@@ -1,0 +1,49 @@
+#our-team{
+  .container{
+    .row{
+      .our-item{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        .title{
+          @include title(1.625rem);
+          margin-bottom: 16px;
+        }
+        .text{
+          @include text(0.9375rem,22px,$color-grey)
+          margin-bottom: 39px;
+        }
+      }
+    }
+    .our-itm{
+      display: flex;
+      margin: 0 0 55px 0;
+      .our-text{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        margin: 19px 0 0 21px;
+        .ourred{
+          font-family: ﻿OpenSans-Regular;
+          font-size: 14pt;
+          color: rgba(240, 69, 76, 255);
+          text-align: left;
+        }
+        .title{
+          @include title(1.2rem);
+          margin-bottom: 11px;
+        }
+        .text{
+          @include text(0.9375rem,14px,$color-grey)
+          margin-bottom: 14px;
+        }
+      }
+    }
+    .more{
+      cursor: pointer;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+}

@@ -1,0 +1,86 @@
+.header{
+  height: 1300px;
+  background: url("../../img/header_bg.jpg") no-repeat center;
+  background-size: cover;
+  .navigation{
+    .row{
+      justify-content: space-between;
+      .logo{
+        height: 74px;
+        width: 100%;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        background: $color-red;
+        padding: 42px 13px 0px;
+        text-align: center;
+        p{
+          font-family: $font-open-sans-regular;
+          color: white;
+          font-size: 1.25rem;
+          font-weight: bold;
+          letter-spacing: 1px;
+          span{
+            color: $color-blue;
+          }
+        }
+      }
+      nav,ul{
+        width: 100%;
+        height: 100%;
+      }
+      nav{
+        ul{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          li{
+            a{
+              font-family: $font-open-sans-bold;
+              text-transform: uppercase;
+              color: $color-dark-blue;
+              font-size: .875rem;
+              letter-spacing: .3px;
+              &.social{
+                display: block;
+                width: 20px;
+                height: 20px;
+                background-position: center;
+                background-repeat: no-repeat;
+                &.twitter{
+                  background-image: url("../../img/Twitter.png");
+                }
+                &.facebook{
+                  background-image: url("../../img/Facebook.png");
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .header-block{
+    margin-top: 40vh;
+    h1{
+      @include title(3rem);
+      line-height: 55px;
+    }
+    p{
+      @include text(1.25rem,40px,$color-blue);
+      margin: 20px 0;
+    }
+    a{
+      font-family: $font-open-sans-bold;
+      width: 171px;
+      height: 64px;
+      background: $color-red;
+      color: white;
+      font-size: .93rem;
+      text-transform: uppercase;
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

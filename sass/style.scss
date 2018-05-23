@@ -1,0 +1,19 @@
+
+//libs and other
+@import "../libs/node_modules/bootstrap/scss/bootstrap";
+@import "libs/reset";
+@import "libs/mixins";
+@import "libs/mixins-media";
+@import "fonts";
+@import "variables";
+@import "default";
+
+//components
+@import "components/header";
+@import "components/snippets";
+@import "components/our-team";
+@import "components/portfolio";
+@import "components/footer";
+
+
+
