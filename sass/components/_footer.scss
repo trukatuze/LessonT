@@ -1,5 +1,20 @@
 footer{
   .container{
+    .row{
+      @media only screen and (max-width: 500px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .social-net{
+        @media only screen and (max-width: 500px) {
+          display: flex;
+          justify-content: center;
+          width: 320px;
+          margin: 0 0 20px 0;
+        }
+      }
+    }
     hr{
       margin: 62px 0 35px 0;
     }
@@ -12,6 +27,9 @@ footer{
       color: rgba(185, 192, 198, 255);
       text-align: right;
       margin-bottom: 43px;
+      @media only screen and (max-width: 500px) {
+        width: 320px;
+      }
     }
   }
 }

@@ -1,10 +1,26 @@
 #snippets{
   .container{
+    @media only screen and (max-width: 770px) {
+      display: flex;
+      justify-content: center;
+    }
     .row{
+      @media only screen and (max-width: 770px) {
+        display: flex;
+        flex-direction: column;
+      }
       .snippets-item{
         display: flex;
         flex-direction: column;
         height: 100%;
+        @media only screen and (max-width: 770px) {
+          display: flex;
+          justify-content: center;
+          width: 500px;
+        }
+        @media only screen and (max-width: 500px) {
+          width: 320px;
+        }
         .title{
           @include title(1.625rem);
           margin-bottom: 22px;

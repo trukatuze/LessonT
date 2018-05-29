@@ -1,16 +1,40 @@
 #portfolio {
   .container {
+    @media only screen and (max-width: 770px) {
+      display: flex;
+      justify-content: center;
+    }
     .row {
+      @media only screen and (max-width: 770px) {
+        display: flex;
+        flex-direction: column;
+      }
+      @media only screen and (max-width: 500px) {
+        width: 320px;
+      }
       .macbook {
         background: url("../../img/MacBook.png") no-repeat;
-        background-size: cover;
+        background-size: contain;
         height: 434px;
+        @media only screen and (max-width: 770px) {
+          width: 500px;
+        }
+        @media only screen and (max-width: 500px) {
+          width: 320px;
+          background-size: contain;
+        }
       }
       .macbook-item{
         display: flex;
         flex-direction: column;
         height: 100%;
         margin: 66px 0 0 0;
+        @media only screen and (max-width: 770px) {
+          width: 500px;
+        }
+        @media only screen and (max-width: 500px) {
+          width: 320px;
+        }
         .macp{
           font-family: ﻿OpenSans-Regular;
           font-size: 16pt;

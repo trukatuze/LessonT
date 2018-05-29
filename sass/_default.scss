@@ -25,6 +25,9 @@
   font-family: $font-open-sans-bold;
   position: relative;
 &:after{
+  @media only screen and (max-width: 770px) {
+    display: none;
+  }
   content: "→";
   font-size: 2em;
   position: absolute;
